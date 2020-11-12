@@ -1,0 +1,39 @@
+
+\usepackage[top=1.9cm, bottom=1.9cm, left=1.9cm, right=1.9cm]{geometry}
+\usepackage[subrefformat=parens]{subcaption}
+\usepackage{xcolor}
+\usepackage{setspace}
+\usepackage{multirow}
+\usepackage{fancyvrb}
+\usepackage{xcolor}
+
+\makeatletter
+	\renewcommand{\theequation}{% 式番号の付け方
+	\thesection.\arabic{equation}}
+	\@addtoreset{equation}{section}
+
+	\renewcommand{\thefigure}{% 図番号の付け方
+	\thesection.\arabic{figure}}
+	\@addtoreset{figure}{section}
+
+	\renewcommand{\thetable}{% 表番号の付け方
+	\thesection.\arabic{table}}
+	\@addtoreset{table}{section}
+\makeatother
+\usepackage{cprotect}
+
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{url}
+\usepackage{amsmath,amssymb,amsthm}
+\newtheorem{Prop.}{Proposition}
+\usepackage{mathtools}
+\usepackage[subrefformat=parens]{subcaption}
+\usepackage{bm}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\mathtoolsset{showonlyrefs=true}
+
+\newcommand*{\fvtextcolor}[2]{\textcolor{#1}{#2}}
+\newcommand{\rank}{\mathop{\rm rank}}
+%\newcommand{\span}{\mathop{\rm span}}
+
